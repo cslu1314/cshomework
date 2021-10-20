@@ -66,6 +66,13 @@ public class Demo {
     }
 }
 
+class A implements Comparator<Cat> {
+
+    @Override
+    public int compare(Cat o1, Cat o2) {
+        return o1.getAge()  - o2.getAge();
+    }
+}
 
 class Cat implements Comparable {
     private int age;
